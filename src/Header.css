@@ -1,0 +1,161 @@
+/* General Header Styles */
+.header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2a2d34; /* Darker color for contrast */
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  /* Logo Section */
+  /* Logo Section */
+.header__logo {
+    width: 70px; /* Increased width for a larger logo */
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Add hover effect for the logo */
+  .header__logo:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  /* Search Bar */
+  
+    /* Search Bar */
+.header__search {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 5px 20px;
+    width: 45%;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for search bar */
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease; /* Adding smooth transitions */
+}
+
+/* Hover effect on the search bar */
+.header__search:hover {
+    box-shadow: 0 0 25px rgba(0, 123, 255, 0.4); /* Stronger glow effect on hover */
+    transform: scale(1.02); /* Slightly enlarge the search bar on hover */
+    background-color: #f7f7f7; /* Light background color change on hover */
+}
+
+/* Search input inside the bar */
+.header_searchInput {
+    height: 35px;
+    width: 100%;
+    padding: 0 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Search input focus effect */
+.header_searchInput:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.6); /* Blue focus glow */
+}
+
+/* Search Icon */
+.header_searchIcon {
+    font-size: 25px;
+    color: #333;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+  /* Navigation Section */
+  .header_nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* More space between items */
+  }
+  
+  /* Navigation Options */
+  .header_option {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect on navigation options */
+  .header_option:hover {
+    transform: translateY(-5px);
+  }
+  
+  .header_optionLineOne {
+    font-size: 12px;
+  }
+  
+  .header_optionLineTwo {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+  
+  /* Hover effect on the cart icon */
+  .header_optionBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Cart hover effect */
+  .header_optionBasket:hover {
+    transform: scale(1.1);
+    color: #ff9900; /* Change color on hover */
+  }
+  
+  .header_basketCount {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #f08804;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 50%;
+    font-size: 12px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .header__search {
+      width: 80%;
+      margin-top: 10px;
+    }
+  
+    .header_nav {
+      margin-top: 15px;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .header__logo {
+      margin-top: 10px;
+    }
+  }
+  

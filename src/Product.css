@@ -1,0 +1,195 @@
+/* .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: flex-end;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    max-height: 400px;
+    min-width: 100px;
+    background-color: white;
+    z-index: 1;
+}   
+
+.product__rating{
+    display: flex;
+    
+}
+
+.product > img{
+    max-height: 200px;
+    width:100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product > button{
+    background: #f0c14b;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+}
+
+.product__price{
+    margin-top: 5px;
+}
+
+.product__info{
+    height: 100px;
+    margin-bottom: 15px;
+} */
+/* .product styling */
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95); /* Soft, light background */
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12); /* Softer, subtle shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 280px; /* Restrict the max width */
+    min-width: 250px; /* Ensure product card has a reasonable minimum size */
+}
+
+.product:hover {
+    transform: translateY(-8px); /* Slight hover elevation */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+}
+
+.product__info {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.product__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333; /* Dark text for contrast */
+}
+
+.product__price {
+    font-size: 17px;
+    color: #ff6347; /* Tomato red for price */
+    margin-top: 12px;
+}
+
+.product__rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.product__image {
+    max-height: 220px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px; /* Rounded corners for image */
+    margin-bottom: 18px;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.product__image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.product__button {
+    background: linear-gradient(90deg, #6a5acd, #ff69b4); /* Gradient from SlateBlue to HotPink */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    padding: 14px 22px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.product__button:hover {
+    background-color: #f06292; /* Lighter pink on hover */
+    transform: scale(1.05); /* Slight button enlargement */
+}
+
+.product__button:active {
+    transform: scale(1); /* Reset button size when clicked */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product {
+        max-width: 100%; /* Allow full width on smaller screens */
+        margin: 10px auto; /* Center product and add small margin */
+    }
+
+    .product__image {
+        max-height: 190px; /* Adjust image size on smaller screens */
+    }
+
+    .product__info {
+        padding: 0 10px; /* Add padding for better text alignment */
+    }
+
+    .product__button {
+        font-size: 15px; /* Smaller font size for smaller screens */
+        padding: 12px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        max-width: 100%;
+        margin: 5px auto;
+    }
+
+    .product__title {
+        font-size: 14px; /* Reduce font size on very small screens */
+    }
+
+    .product__price {
+        font-size: 13px; /* Adjust price font size */
+    }
+
+    .product__image {
+        max-height: 150px; /* Smaller image for small screens */
+    }
+
+    .product__button {
+        font-size: 12px; /* Reduce button font size */
+        padding: 8px 12px;
+    }
+}
+
+/* Prompt (Success message) Styling */
+.product__prompt, .checkoutProduct__prompt {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50; /* Green for success */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 15px;
+    font-size: 18px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeInOut 2.5s ease-in-out; /* Adjusted animation for subtle effect */
+    z-index: 9999; /* Ensure it appears above other elements */
+}
+
+/* Animation for Prompt */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+    15%, 85% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+}

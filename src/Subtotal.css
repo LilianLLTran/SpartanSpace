@@ -1,0 +1,92 @@
+/* .subtotal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+
+.subtotal__gift{
+    display: flex;
+    align-items: center;
+}
+
+.subtotal__gift >input{
+    margin-right: 5px;
+}
+
+.subtotal > button{
+    background: #f0c14b;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+} */
+
+.subtotal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    background-color: #f7f7f7; /* Slightly lighter background for a fresh look */
+    border: 1px solid #dddddd;
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.subtotal__info {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333; /* Neutral dark color */
+    opacity: 1; /* Ensure text is fully opaque */
+}
+
+.subtotal__gift {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    opacity: 1; /* Ensure full opacity for the gift text */
+    color: #333; /* Dark text for clarity */
+}
+
+.subtotal__gift input {
+    margin-right: 10px; /* Space between the checkbox and the text */
+}
+
+/* Updated Button Styling */
+.subtotal__button {
+    background: linear-gradient(90deg, #6a5acd, #4b0082); /* Purple gradient for a modern touch */
+    border-radius: 8px; /* Rounded corners for consistency */
+    width: 100%;
+    height: 40px; /* Taller button for better visibility */
+    border: none;
+    color: white;
+    font-size: 1rem; /* Slightly smaller font size for a cleaner look */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-top: 10px;
+}
+
+/* Button Hover Effect */
+.subtotal__button:hover {
+    background: linear-gradient(90deg, #4b0082, #6a5acd); /* Reverse the gradient on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for interactivity */
+}
+
+/* Button Focus Effect (on keyboard focus or click) */
+.subtotal__button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(75, 0, 130, 0.8); /* Glow effect when focused */
+}

@@ -1,0 +1,205 @@
+/* Overall Product Detail Container */
+.productDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background-color: #f0f4f8; /* Light grey-blue background */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* Softer shadow */
+    margin-top: 30px;
+    transition: transform 0.3s ease-in-out;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productDetail:hover {
+    transform: translateY(-8px); /* Slight hover elevation */
+}
+
+/* Product image styling */
+.productDetail__image {
+    max-width: 100%;
+    max-height: 450px;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.productDetail__image:hover {
+    transform: scale(1.08); /* Smooth zoom effect on hover */
+}
+
+/* Title styling */
+.productDetail__info h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin: 15px 0;
+    font-family: 'Montserrat', sans-serif; /* Modern font */
+}
+
+/* Price styling */
+.productDetail__price {
+    font-size: 2rem;
+    color: #ff6f61; /* Coral color for price */
+    font-weight: bold;
+    margin: 18px 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Star rating styling */
+.productDetail__rating {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.productDetail__rating span {
+    font-size: 1.6rem;
+    color: #f2b900; /* Golden yellow for stars */
+}
+
+/* Description styling */
+.productDetail__description {
+    font-size: 1.3rem;
+    color: #666;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Add to Cart button styling */
+.productDetail__addButton {
+    background: linear-gradient(90deg, #4c8bf5, #6b67e6); /* Blue to Purple gradient */
+    border: none;
+    border-radius: 30px;
+    padding: 16px 32px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    width: 230px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Hover effect for the Add to Cart button */
+.productDetail__addButton:hover {
+    background: linear-gradient(90deg, #7a6feb, #4c8bf5); /* Reverse gradient on hover */
+    transform: translateY(-8px) scale(1.05); /* Elevate and slightly scale */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow for hover */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Active state for the Add to Cart button */
+.productDetail__addButton:active {
+    transform: translateY(2px) scale(1); /* Pressed effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Smaller shadow when clicked */
+}
+
+/* Back button container styling */
+.productDetail__backButton {
+    font-size: 1.1rem;
+    margin-top: 30px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: #e8f5e9; /* Light green background */
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Soft shadow for depth */
+}
+
+/* Hover effect for the Back button */
+.productDetail__backButton:hover {
+    background-color: #c8e6c9; /* Lighter green on hover */
+    transform: translateY(-5px) scale(1.05); /* Slight scale up */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Active state for the Back button */
+.productDetail__backButton:active {
+    transform: translateY(2px); /* Pressed down when clicked */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow on click */
+}
+
+/* Go Back Button Styling */
+.productDetail__goBackButton {
+    background-color: #02b3b2; /* Turquoise color */
+    border: 1px solid #0a7a75;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    cursor: pointer;
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover effect for the Go Back button */
+.productDetail__goBackButton:hover {
+    background-color: #017c76; /* Darker turquoise on hover */
+    transform: translateY(-6px) scale(1.05); /* Slightly scale and elevate */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* Active state for the Go Back button */
+.productDetail__goBackButton:active {
+    transform: translateY(2px); /* Button pressed effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Reduced shadow on click */
+}
+
+/* Ensure text visibility on the title and description */
+.productDetail__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 800px;
+    margin-top: 25px;
+}
+
+.productDetail__info h1,
+.productDetail__price,
+.productDetail__description {
+    width: 100%;
+    margin: 12px 0;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .productDetail__image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .productDetail__info {
+        padding: 10px;
+    }
+
+    .productDetail__addButton {
+        width: 100%;
+        padding: 14px 28px;
+    }
+}

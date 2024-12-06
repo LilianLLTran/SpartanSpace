@@ -1,0 +1,187 @@
+/* Login container background image */
+.login__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .login__background > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures proper scaling of the image */
+    transition: opacity 1s ease-in-out;
+    object-position: -10% center; /* Moves the image slightly to the left */
+  }
+  
+  /* Login container */
+  .login {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4); /* Optional: to add a dark overlay on top of the background image */
+  }
+  
+  /* Logo */
+  .login__logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    width: 100px;
+    z-index: 2;
+  }
+  
+  /* Form container */
+  .login__container {
+    width: 100%;
+    max-width: 350px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px; /* More rounded corners */
+    border: none; /* Removed border to enhance the frosted effect */
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.3); /* More subtle background */
+    backdrop-filter: blur(12px); /* Increased blur for a stronger glass effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Soft shadow around the container */
+    z-index: 2;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  /* Adding hover effect to the form container for subtle interactivity */
+  .login__container:hover {
+    transform: translateY(-5px); /* Slight upward movement */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  /* Heading and form elements styling */
+  .login__container > h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333; /* Darker text for readability */
+    text-align: center;
+  }
+  
+  .login__container > form > h5 {
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 600;
+  }
+  
+  /* Styling for input fields */
+  .login__container > form > input {
+    height: 40px;
+    margin-bottom: 15px;
+    background-color: white;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Focus effect on inputs */
+  .login__container > form > input:focus {
+    border-color: #0071e3;
+    box-shadow: 0 0 8px rgba(0, 113, 227, 0.5); /* Blue glow effect */
+    outline: none;
+  }
+  
+  /* Hover effect on inputs */
+  .login__container > form > input:hover {
+    border-color: #0071e3;
+    box-shadow: 0 0 6px rgba(0, 113, 227, 0.3); /* Subtle glow on hover */
+  }
+  
+  /* Paragraph styling */
+  .login__container > p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+  }
+  
+  /* Sign-In Text with Logo */
+  .login__signInText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center-align the text */
+    margin-bottom: 20px;
+  }
+  
+  .login__signInLogo {
+    width: 45px; /* Increase the logo size */
+    margin-right: 15px; /* More space between the logo and text */
+  }
+  
+  .login__signInButton {
+    background: linear-gradient(to right, #4e73df, #6c5ce7); /* New color gradient */
+    border-radius: 8px;
+    width: 100%;
+    height: 45px;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  }
+  
+  
+  .login__signInButton:hover {
+    background: linear-gradient(to right, #6c5ce7, #4e73df); /* Hover gradient */
+    transform: scale(1.05); /* Subtle scaling effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  }
+  
+  .login__registerButton {
+    background: linear-gradient(to right, #ff6f61, #ff9f87); /* Soft red gradient */
+    border-radius: 8px;
+    width: 100%;
+    height: 45px;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  }
+  
+  .login__registerButton:hover {
+    background: linear-gradient(to right, #ff9f87, #ff6f61); /* Hover gradient */
+    transform: scale(1.05); /* Subtle scaling effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  }
+  
+  /* Optional: Make the effect responsive */
+  @media (max-width: 768px) {
+    .login__container {
+      width: 90%;
+      padding: 25px;
+    }
+  
+    .login__logo {
+      width: 90px;
+    }
+  
+    .login__signInButton,
+    .login__registerButton {
+      height: 45px;
+    }
+  
+    .login__container > h1 {
+      font-size: 20px;
+    }
+  }
+  

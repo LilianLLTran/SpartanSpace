@@ -1,0 +1,154 @@
+/* .payment{
+    background-color: white;
+}
+
+.payment__container > h1{
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    background-color: rgb(234, 237, 237);
+    border-bottom: 1px solid lightgray;
+}
+
+.payment__container > h1 a{
+    text-decoration: none;
+}
+
+.payment__section{
+    display: flex;
+    padding: 20px;
+    margin: 0 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.payment__title{
+    flex: 0.2;
+}
+
+.payment__address, .payment__items, .payment__details{
+    flex: 0.8;
+}
+
+.payment__details > form{
+    max-width: 400px;
+}
+
+.payment__details > h3 {
+    padding-bottom: 20px;
+}
+
+.payment__details > form > div > button {
+    background: #f0c14b;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    font-weight: bolder;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+}
+ */
+
+
+
+
+
+ .payment {
+    background: rgba(255, 255, 255, 0.9); /* Glass-like effect */
+    padding: 20px;
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 20px auto; /* Center container */
+    max-width: 800px;
+}
+
+.payment__container > h1 {
+    text-align: center;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #333; /* Darker for contrast */
+    background: rgba(234, 237, 237, 0.8); /* Subtle gradient */
+    border-bottom: 1px solid lightgray;
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.payment__container > h1 a {
+    text-decoration: none;
+    color: #1e90ff; /* Soft link color */
+    transition: color 0.3s ease;
+}
+
+.payment__container > h1 a:hover {
+    color: #63a4ff; /* Brighter hover effect */
+}
+
+.payment__section {
+    display: flex;
+    flex-wrap: wrap; /* Responsive wrapping */
+    padding: 20px;
+    margin: 0 20px;
+    border-bottom: 1px solid lightgray;
+    gap: 20px; /* Space between sections */
+    background: rgba(255, 255, 255, 0.8); /* Subtle glass effect */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.payment__title {
+    flex: 0.2;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #444; /* Neutral text color */
+}
+
+.payment__address,
+.payment__items,
+.payment__details {
+    flex: 0.8;
+    font-size: 1rem;
+    color: #555; /* Softer gray for secondary text */
+}
+
+.payment__details > form {
+    max-width: 400px;
+    background: rgba(250, 250, 250, 0.9); /* Slight contrast for the form */
+    padding: 20px;
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Depth for form */
+    border: 1px solid rgba(200, 200, 200, 0.6); /* Light border for separation */
+}
+
+.payment__details > h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.payment__details > form > div > button {
+    background: linear-gradient(90deg, #f0c14b, #ffd966); /* Gradient background */
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid;
+    font-weight: bold;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.payment__details > form > div > button:hover {
+    background: linear-gradient(90deg, #ffd966, #f0c14b); /* Reverse gradient */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.payment__details > form > div > button:active {
+    transform: translateY(1px); /* Pressed effect */
+    background: linear-gradient(90deg, #f0b639, #f0c14b); /* Subtle change on click */
+}

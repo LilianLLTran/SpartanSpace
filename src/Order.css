@@ -1,0 +1,85 @@
+/* .order{
+    padding: 40px;
+    margin: 20px 0;
+    border: 1px solid lightgray;
+    background-color: white;
+    position: relative;
+}
+
+.order__id{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+
+.order__total{
+    font-weight: 500;
+    text-align: right;
+} */
+
+
+.order {
+    padding: 40px;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.9); /* Less translucent (opacity 0.9) */
+    border: 1px solid rgba(200, 200, 200, 0.8); /* Softer, less translucent border */
+    border-radius: 12px; /* Rounded edges */
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ensures content stays inside */
+}
+
+.order__id {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555; /* Soft gray for text */
+    background: rgba(234, 237, 237, 0.9); /* Slightly more opaque background */
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.order__total {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333; /* Fully opaque text color */
+    text-align: right;
+    margin-top: 20px;
+    border-top: 1px solid rgba(200, 200, 200, 0.8); /* Less translucent border */
+    padding-top: 10px;
+}
+
+/* Add more opacity to the text within the order details */
+.order__details {
+    color: #333; /* Dark and solid text color for better readability */
+}
+
+.order__details p, .order__details h2 {
+    color: #333; /* Ensure all text inside order details is solid */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .order {
+        padding: 20px;
+    }
+
+    .order__id {
+        font-size: 0.8rem;
+        top: 10px;
+        right: 10px;
+    }
+
+    .order__total {
+        font-size: 1rem;
+        text-align: center;
+        border-top: none;
+        margin-top: 10px;
+        padding-top: 0;
+    }
+}

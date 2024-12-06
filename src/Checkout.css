@@ -1,0 +1,88 @@
+.checkout {
+  display: flex;
+  flex-direction: column; /* Stacks sections on small screens */
+  gap: 20px; /* Space between elements */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Slight glass effect */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px auto; /* Centers container */
+  max-width: 1200px; /* Limits the width for readability */
+}
+
+.checkout__ad {
+  width: 100%; /* Stretch the ad to full width */
+  height: 300px; /* Fixed height to avoid excessive height */
+  object-fit: cover; /* Ensures the image covers the entire container without distortion */
+  margin-bottom: 20px;
+  border-radius: 10px; /* Rounded ad corners */
+  overflow: hidden; /* Ensures content stays inside the ad */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds depth */
+}
+
+.checkout__ad img {
+  width: 100%; /* Make the image span the entire container */
+  height: 100%; /* Allow the height to match the container */
+  object-fit: cover; /* Ensures the image fills the container without clipping */
+  border-radius: 10px; /* Optional: Adds rounded corners for a smoother appearance */
+  margin-bottom: 20px; /* Optional: Adds space below the image */
+}
+
+.checkout__title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-right: 10px;
+  padding: 10px;
+  color: #333; /* Neutral dark color for text */
+  text-align: center; /* Centers the title */
+  border-bottom: 2px solid lightgray;
+  background: rgba(234, 237, 237, 0.8); /* Subtle background for separation */
+  border-radius: 8px; /* Rounded edges for visual consistency */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds depth */
+}
+
+/* Button Styling for Proceed to Checkout */
+.checkout__button {
+  background: linear-gradient(90deg, #6a5acd, #4b0082); /* Purple gradient for a modern feel */
+  border: none;
+  color: white;
+  padding: 15px 30px; /* Larger padding for a more prominent button */
+  font-size: 1.2rem; /* Slightly larger text for emphasis */
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adds a soft shadow for depth */
+  margin-top: 20px; /* Adds some space above the button */
+  width: 100%; /* Button spans the entire width */
+}
+
+/* Button Hover Effect */
+.checkout__button:hover {
+  background: linear-gradient(90deg, #4b0082, #6a5acd); /* Reverse the gradient on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for better interactivity */
+}
+
+/* Button Focus Effect (on keyboard focus or click) */
+.checkout__button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(75, 0, 130, 0.8); /* Glow effect when focused */
+}
+
+.checkout__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+/* Styling for Subtotal Text */
+.checkout h3 {
+  font-weight: bold; /* Makes the text bold */
+  font-size: 1.4rem; /* Adjust font size as needed */
+  color: #333; /* Dark color for better visibility */
+  opacity: 1; /* Ensures no transparency */
+  margin-bottom: 10px; /* Adds some space below the text */
+}

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(120deg, rgba(20, 20, 20, 0.8), rgba(50, 50, 50, 0.8));
+    background-size: 400% 400%; /* For animation movement */
+    animation: gradientAnimation 8s ease infinite; /* Smooth gradient rotation */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #f1f1f1; /* Light text for contrast */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    color: #ff79c6; /* Stylish syntax-like highlighting */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-block;
+    backdrop-filter: blur(5px); /* Adds a frosted glass effect */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #ffffff; /* Bright white for contrast */
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6); /* Adds depth to text */
+  }
+  
+  p {
+    margin-bottom: 15px;
+    color: #010000; /* Slightly muted for better hierarchy */
+    line-height: 1.8;
+  }
+  
+  a {
+    color: #63a4ff; /* Soft blue for links */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: #85c1ff; /* Lighter blue for hover */
+    text-decoration: underline;
+  }
+  
+  ul, ol {
+    margin-left: 20px;
+    padding-left: 20px;
+    color: #cfcfcf; /* Neutral light gray for list items */
+  }
+  
+  button {
+    font-family: inherit;
+    background: rgba(50, 150, 255, 0.2); /* Glassy button background */
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: rgba(50, 150, 255, 0.4);
+    transform: translateY(-2px);
+  }
+  
+  .home {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 20px;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    backdrop-filter: blur(10px); /* Frosted effect */
+  }
+  
+  .home__row {
+    display: flex;
+    gap: 10px;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .home__row:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .home__image {
+    width: 100%;
+    margin-bottom: -150px;
+    border-radius: 10px;
+    object-fit: cover;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .home__image:hover {
+    opacity: 0.9;
+  }
+  
