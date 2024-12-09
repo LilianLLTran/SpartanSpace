@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SpartanSpace/static/css/main.65e3d878.css",
+    "main.js": "/SpartanSpace/static/js/main.9585736f.js",
+    "static/js/453.bd0df0f0.chunk.js": "/SpartanSpace/static/js/453.bd0df0f0.chunk.js",
+    "index.html": "/SpartanSpace/index.html",
+    "main.65e3d878.css.map": "/SpartanSpace/static/css/main.65e3d878.css.map",
+    "main.9585736f.js.map": "/SpartanSpace/static/js/main.9585736f.js.map",
+    "453.bd0df0f0.chunk.js.map": "/SpartanSpace/static/js/453.bd0df0f0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65e3d878.css",
+    "static/js/main.9585736f.js"
+  ]
+}
